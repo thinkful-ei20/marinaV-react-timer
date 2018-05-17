@@ -49,6 +49,7 @@ export default class Timer extends React.Component {
   }
 
   resetCounter() {
+    clearInterval(this.timer);
     this.setState({
       counter: 0,
       min: 0,
